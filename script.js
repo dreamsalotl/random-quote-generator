@@ -3,7 +3,7 @@ const newQuoteButton = document.getElementById("new-quote");
 
 async function fetchQuote() {
     try {
-        const response = await fetch("http://api.quotable.io/random"); // Using http due to temporary SSL issues with the API.
+        const response = await fetch("https://api.quotable.io/random"); // Using http due to temporary SSL issues with the API.
 
         const data = await response.json();
 
